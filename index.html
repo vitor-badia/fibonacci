@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body class="is-light">
@@ -21,10 +25,15 @@
 
     <section>
         <label for="fibonacci">Digite um número e veja se é uma sequência de fibonacci ou nâo</label>
-        <input type="text" name="fibonacci" id="fibonacci">
+        <input type="number" name="fibonacci" id="fibonacci">
         <button class="button-resp" id="fibonacciBtn" onclick="fibonacciBtnActive()">Perguntar</button>
-    </section>
+        <p id="result">é um número de fibonacci</p>
+        <div>
+            <ul id="numbersResult">
 
+            </ul>
+        </div>
+    </section>
 
     <script src="./index.js"></script>
 </body>
