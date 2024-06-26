@@ -8,7 +8,7 @@ document.getElementById('btn-dark/light').addEventListener('click', pageTheme)
 
 let x = 0
 let y = 1
-let z = 0
+let z;
 
 z = x + y
 
