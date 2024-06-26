@@ -27,17 +27,25 @@
         </button>
     </header>
 
-    <section>
-        <label for="fibonacci">Digite um número e veja se é uma sequência de fibonacci ou nâo</label>
-        <input type="number" name="fibonacci" id="fibonacci">
-        <button class="button-resp" id="fibonacciBtn" onclick="fibonacciBtnActive()">Perguntar</button>
-        <p id="result">é um número de fibonacci</p>
-        <div>
-            <ul id="numbersResult">
+    <div style="padding-bottom: 59px;"></div>
 
-            </ul>
-        </div>
+    <section>
+        <form onsubmit="fibonacciBtnActive(); return false">
+            <label for="fibonacci">Digite um número e veja se é uma sequência de fibonacci ou não</label>
+            <input type="number" name="fibonacci" id="fibonacci">
+            <button type="submit" class="button-resp" id="fibonacciBtn">Perguntar</button>
+            <p id="result"></p>
+            <div>
+                <ul id="numbersResult">
+
+                </ul>
+            </div>
+        </form>
     </section>
+
+    <footer>
+        <p>made by Vitor Badia</p>
+    </footer>
 
     <script src="./index.js"></script>
 </body>

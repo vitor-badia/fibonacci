@@ -17,14 +17,14 @@ let option = 0
 function calcFibonacci(valor) {
 
     while (z <= valor) {
+        if (valor == z || valor == 1) {
+            option = 1
+        }
+        createLi(x, y, z)
         x = y
         y = z
         z = x + y
-        createLi(x, y, z)
 
-        if (valor == z) {
-            option = 1
-        }
 
     }
 
