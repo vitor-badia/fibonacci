@@ -4,12 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fibonacci</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 </head>
 
 <body class="is-light">
@@ -23,17 +27,25 @@
         </button>
     </header>
 
-    <section>
-        <label for="fibonacci">Digite um número e veja se é uma sequência de fibonacci ou nâo</label>
-        <input type="number" name="fibonacci" id="fibonacci">
-        <button class="button-resp" id="fibonacciBtn" onclick="fibonacciBtnActive()">Perguntar</button>
-        <p id="result">é um número de fibonacci</p>
-        <div>
-            <ul id="numbersResult">
+    <div style="padding-bottom: 59px;"></div>
 
-            </ul>
-        </div>
+    <section>
+        <form onsubmit="fibonacciBtnActive(); return false">
+            <label for="fibonacci">Digite um número e veja se é uma sequência de fibonacci ou não</label>
+            <input type="number" name="fibonacci" id="fibonacci">
+            <button type="submit" class="button-resp" id="fibonacciBtn">Perguntar</button>
+            <p id="result"></p>
+            <div>
+                <ul id="numbersResult">
+
+                </ul>
+            </div>
+        </form>
     </section>
+
+    <footer>
+        <p>made by Vitor Badia</p>
+    </footer>
 
     <script src="./index.js"></script>
 </body>
